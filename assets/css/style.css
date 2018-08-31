@@ -20,7 +20,8 @@ a {
 .container {
 	width: 80%;
 	margin: 0 auto;
-	padding: 40px 20px;
+	padding: 40px 20px 20px;
+	display: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -82,11 +83,11 @@ nav {
 }
 
 .links li.active {
-	border: 1px solid #555;
 	color: #555;
 }
 
-.links li.hovered {
+.links li.hovered,
+.my-links a.hovered {
 	color: #555;
 }
 
@@ -119,7 +120,7 @@ nav {
 
 /****LANDING****/
 
-.landing {
+#landing {
 	padding: 16vh 0;
 	color: #ccc;
 	display: flex;
@@ -127,22 +128,22 @@ nav {
 	position: relative;
 }
 
-.landing .title {
+#landing .title {
 	width: 100%;
 }
 
-.landing .title h1 {
+#landing .title h1 {
 	font-size: 4vw;
 }
 
-.landing .title h1 span {
+#landing .title h1 span {
 	font-family: "Monoton", cursive;
 	color: red;
 	font-weight: lighter;
 	font-size: 5vw;
 }
 
-.landing .content {
+#landing .content {
 	width: 100%;
 	display: flex;
 	align-items: flex-end;
@@ -157,7 +158,7 @@ nav {
 	color: #777;
 }
 
-.landing:before {
+#landing:before {
 	content: '';
 	height: 120%;
 	width: 25vw;
@@ -173,22 +174,22 @@ nav {
 
 @media only screen and (max-width: 767px) {
 
-	.landing {
+	#landing {
     padding: 10vh 5px;
     display: block;
     height: 75vh;
 	}
 
-  .landing .title h1 {
+  #landing .title h1 {
     font-size: 9vw;
     line-height: 1.4;
   }
 
-  .landing .title h1 span {
+  #landing .title h1 span {
     font-size: 14vw;
   }
 
-	.landing .content {
+	#landing .content {
     display: block;
 		padding-top: 20px;
 		text-align: left;
@@ -196,7 +197,7 @@ nav {
     margin-top: 5px;
 	}
 
-	.landing:before {
+	#landing:before {
 		width: 65%;
     height: 100%;
 		right: 0;
@@ -215,6 +216,7 @@ footer {
 footer .my-links {
   margin-right: 50px;
   font-size: 1vw;
+  display: flex;
 }
 
 footer .my-links a {
@@ -249,4 +251,55 @@ footer p {
     text-align: center;
     font-size: 10px
   }
+}
+
+
+
+/****ABOUT****/
+
+.slick-arrow {
+	display: none !important;
+}
+
+.tech {
+	width: 250px;
+	font-size: 5vw;
+	color: red;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.hexagon {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#about {
+	display: flex;
+	padding: 16vh 0;
+}
+
+#about .content {
+	width: 50%;
+}
+
+#about .image {
+	width: 50%;
+	justify-content: center;
+}
+
+#about .content h1 {
+	font-size: 6vw;
+	color: red;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+#about .content h3 {
+	font-size: 2vw;
+	color: #ccc;
+	font-weight: lighter;
+	font-style: italic;
+	margin-bottom: 40px;
 }
