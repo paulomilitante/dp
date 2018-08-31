@@ -214,6 +214,7 @@ footer {
 
 footer .my-links {
   margin-right: 50px;
+  font-size: 1vw;
 }
 
 footer .my-links a {
@@ -221,7 +222,7 @@ footer .my-links a {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 0.8vw;
   line-height: 2;  
 }
 
